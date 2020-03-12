@@ -1,0 +1,381 @@
+<div class="body_wrapper food_cate_page notification_top">
+    <app-header></app-header>
+    <section class="foodcate_topinput">
+        <div class="conta_iner">
+            <div class="food_cateinner_div">
+                <div class="food_cate_title">
+                    <h2>Restaurants</h2>
+                </div>
+                <div class="bann_inputfield food_cate_fields">
+                    <ul>
+                        <li>
+                            <div class="loaction_input">
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Type a location" name="name">
+                                </mat-form-field>
+                            </div>
+                            <div class="location_icon">
+                                <figure>
+                                    <img src="../../../assets/images/homepage/location.png" alt="">
+                                </figure>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="loaction_input">
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Food and Restaurants…" name="name">
+                                </mat-form-field>
+                            </div>
+                            <div class="location_icon">
+                                <figure>
+                                    <img src="../../../assets/images/homepage/search.png" alt="">
+                                </figure>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----start food cate list-->
+    <section class="food_side_list">
+        <div class="conta_iner">
+            <h3 class="food_cate_sidetitle">73 restaurants found</h3>
+            <div class="food_sidebar_innerdiv">
+                <div class="food_cate_sidebar">
+                    <div class="food_cate_subitem">
+                        <ul>
+                            <li>
+                                <h3 class="sort">sort</h3>
+                            </li>
+                            <li>
+                                <mat-checkbox>Delivery Time Max to Min</mat-checkbox>
+                            </li>
+                            <li>
+                                <mat-checkbox>Delivery Time Max to Min</mat-checkbox>
+                            </li>
+                            <li>
+                                <mat-checkbox>Delivery Time Max to Min</mat-checkbox>
+                            </li>
+                            <li>
+                                <mat-checkbox>Delivery Time Max to Min</mat-checkbox>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---------start rating slider-->
+                    <div class="food_item_rateing">
+                        <p>Avg. Delivery Time (mins)</p>
+                        <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="1000" min="1" max="100000">
+                        </mat-slider>
+                    </div>
+                    <div class="food_item_asiderating">
+                        <p>Ratings</p>
+                        <mat-form-field>
+                            <mat-label>Favorite food</mat-label>
+                            <mat-select>
+                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                    {{food.viewValue}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="food_item_pricerange food_item_rateing">
+                        <p>Price range (KES)</p>
+                        <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="1000" min="1" max="100000">
+                        </mat-slider>
+                    </div>
+                    <div class="food_item_filters">
+                        <button mat-button>Filter</button>
+                    </div>
+
+                </div>
+                <div class="food_cate_box">
+                    <ul>
+                        <li>
+                            <div class="hm_bestoffers_innerbx food_cate_innerbox" (click)="goTocartpage()">
+                                <div class="hm_bestoffer_img">
+                                    <figure>
+                                        <img src="../../../assets/images/homepage/foodimg.jpg" alt="">
+                                    </figure>
+                                    <div class="hm_restur_rateing">
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/rateing.png" alt="">
+                                        </figure>
+                                        <span>4.8</span>
+                                    </div>
+                                </div>
+                                <div class="best_offers_disc">
+                                    <h3>Basic Kneads Pizza</h3>
+                                    <span>
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/perctange.png" alt=""
+                                                class="perctange">
+                                        </figure>30% Off I Valid Up to $50 order
+                                    </span>
+                                    <p>Seafood, Mediterranean, Europe…</p>
+                                    <p>42 Jong Panchester St, 9073</p>
+                                    <div class="hm_restur_foodtime offer_foodtime">
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/res_time.png" alt="resttime">
+                                            </span>
+                                            <p>60 Min</p>
+                                        </div>
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/rest_money.png"
+                                                    alt="resttime">
+                                            </span>
+                                            <p>06</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="hm_bestoffers_innerbx food_cate_innerbox" (click)="goTocartpage()">
+                                <div class="hm_bestoffer_img">
+                                    <figure>
+                                        <img src="../../../assets/images/homepage/foodimg.jpg" alt="">
+                                    </figure>
+                                    <div class="hm_restur_rateing">
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/rateing.png" alt="">
+                                        </figure>
+                                        <span>4.8</span>
+                                    </div>
+                                </div>
+                                <div class="best_offers_disc">
+                                    <h3>Basic Kneads Pizza</h3>
+                                    <span>
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/perctange.png" alt=""
+                                                class="perctange">
+                                        </figure>30% Off I Valid Up to $50 order
+                                    </span>
+                                    <p>Seafood, Mediterranean, Europe…</p>
+                                    <p>42 Jong Panchester St, 9073</p>
+                                    <div class="hm_restur_foodtime offer_foodtime">
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/res_time.png" alt="resttime">
+                                            </span>
+                                            <p>60 Min</p>
+                                        </div>
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/rest_money.png"
+                                                    alt="resttime">
+                                            </span>
+                                            <p>06</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="hm_bestoffers_innerbx food_cate_innerbox" (click)="goTocartpage()">
+                                <div class="hm_bestoffer_img">
+                                    <figure>
+                                        <img src="../../../assets/images/homepage/foodimg.jpg" alt="">
+                                    </figure>
+                                    <div class="hm_restur_rateing">
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/rateing.png" alt="">
+                                        </figure>
+                                        <span>4.8</span>
+                                    </div>
+                                </div>
+                                <div class="best_offers_disc">
+                                    <h3>Basic Kneads Pizza</h3>
+                                    <span>
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/perctange.png" alt=""
+                                                class="perctange">
+                                        </figure>30% Off I Valid Up to $50 order
+                                    </span>
+                                    <p>Seafood, Mediterranean, Europ Seafood, Mediterranean, Europe</p>
+                                    <p>42 Jong Panchester St, 9073</p>
+                                    <div class="hm_restur_foodtime offer_foodtime">
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/res_time.png" alt="resttime">
+                                            </span>
+                                            <p>60 Min</p>
+                                        </div>
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/rest_money.png"
+                                                    alt="resttime">
+                                            </span>
+                                            <p>06</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="hm_bestoffers_innerbx food_cate_innerbox" (click)="goTocartpage()">
+                                <div class="hm_bestoffer_img">
+                                    <figure>
+                                        <img src="../../../assets/images/homepage/foodimg.jpg" alt="">
+                                    </figure>
+                                    <div class="hm_restur_rateing">
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/rateing.png" alt=""
+                                                class="perctange">
+                                        </figure>
+                                        <span>4.8</span>
+                                    </div>
+                                </div>
+                                <div class="best_offers_disc">
+                                    <h3>Basic Kneads Pizza</h3>
+                                    <span>
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/perctange.png" alt=""
+                                                class="perctange">
+                                        </figure>30% Off I Valid Up to $50 order
+                                    </span>
+                                    <p>Seafood, Mediterranean, Europ Seafood, Mediterranean, Europe</p>
+                                    <p>42 Jong Panchester St, 9073</p>
+                                    <div class="hm_restur_foodtime offer_foodtime">
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/res_time.png" alt="resttime">
+                                            </span>
+                                            <p>60 Min</p>
+                                        </div>
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/rest_money.png"
+                                                    alt="resttime">
+                                            </span>
+                                            <p>06</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="hm_bestoffers_innerbx food_cate_innerbox" (click)="goTocartpage()">
+                                <div class="hm_bestoffer_img">
+                                    <figure>
+                                        <img src="../../../assets/images/homepage/foodimg.jpg" alt="">
+                                    </figure>
+                                    <div class="hm_restur_rateing">
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/rateing.png" alt="">
+                                        </figure>
+                                        <span>4.8</span>
+                                    </div>
+                                </div>
+                                <div class="best_offers_disc">
+                                    <h3>Basic Kneads Pizza</h3>
+                                    <span>
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/perctange.png" alt=""
+                                                class="perctange">
+                                        </figure>30% Off I Valid Up to $50 order
+                                    </span>
+                                    <p>Seafood, Mediterranean, Europ Seafood, Mediterranean, Europe</p>
+                                    <p>42 Jong Panchester St, 9073</p>
+                                    <div class="hm_restur_foodtime offer_foodtime">
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/res_time.png" alt="resttime">
+                                            </span>
+                                            <p>60 Min</p>
+                                        </div>
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/rest_money.png"
+                                                    alt="resttime">
+                                            </span>
+                                            <p>06</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="hm_bestoffers_innerbx food_cate_innerbox" (click)="goTocartpage()">
+                                <div class="hm_bestoffer_img">
+                                    <figure>
+                                        <img src="../../../assets/images/homepage/foodimg.jpg" alt="">
+                                    </figure>
+                                    <div class="hm_restur_rateing">
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/rateing.png" alt="">
+                                        </figure>
+                                        <span>4.8</span>
+                                    </div>
+                                </div>
+                                <div class="best_offers_disc">
+                                    <h3>Basic Kneads Pizza</h3>
+                                    <span>
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/perctange.png" alt=""
+                                                class="perctange">
+                                        </figure>30% Off I Valid Up to $50 order
+                                    </span>
+                                    <p>Seafood, Mediterranean, Europ Seafood, Mediterranean, Europe</p>
+                                    <p>42 Jong Panchester St, 9073</p>
+                                    <div class="hm_restur_foodtime offer_foodtime">
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/res_time.png" alt="resttime">
+                                            </span>
+                                            <p>60 Min</p>
+                                        </div>
+                                        <div class="hm_res_time">
+                                            <span>
+                                                <img src="../../../assets/images/homepage/rest_money.png"
+                                                    alt="resttime">
+                                            </span>
+                                            <p>06</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <!-----star pagination-->
+                    <div class="food_pageination">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item next_icon page_active"><a class="page-link">
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/slider.png" alt="">
+                                        </figure>
+                                    </a></li>
+                                <li class="page-item"><a class="page-link">1</a></li>
+                                <li class="page-item"><a class="page-link">2</a></li>
+                                <li class="page-item"><a class="page-link">3</a></li>
+                                <li class="page-item next_icon"><a class="page-link">
+                                        <figure>
+                                            <img src="../../../assets/images/homepage/slider.png" alt="">
+                                        </figure>
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <app-footer></app-footer>
+</div>

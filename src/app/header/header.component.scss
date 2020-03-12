@@ -1,0 +1,144 @@
+a {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+  width: 100%;
+  cursor: pointer;
+}
+.forget_pswd {
+  text-align: right;
+  margin: 10px 0 29px;
+}
+button.signin_btn {
+  background: #3e9900;
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-weight: 300;
+  height: 46px;
+  font-size: 16px;
+  border-radius: 7px;
+}
+h4 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+}
+.facebook_connection {
+  display: flex;
+  background: #fff;
+  border: 1px solid #7070701a;
+  width: 160px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+.connect ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.connect ul li {
+  width: 47%;
+}
+.facebook_img h4 {
+  margin-left: 10px;
+}
+.connect h4 {
+  margin: 9px 0 14px;
+  text-align: center;
+}
+.sign_uplink h4 {
+  margin-top: 22px;
+  text-align: center;
+}
+.sign_uplink h4 a {
+  color: #3e9900;
+  font-weight: normal;
+  cursor: pointer;
+}
+.connect ul h4 {
+  margin: 0px 10px 0px;
+}
+.signup_main .facebook_connection {
+  width: 100%;
+}
+.signup_main .connect ul li {
+  width: 100%;
+  margin: 20px 0;
+}
+.signup_main button.signin_btn {
+  margin-top: 50px;
+}
+.recoverpassword .signin_right_inner {
+  text-align: center;
+}
+.recoverpassword p {
+  color: #1a1824;
+  font-size: 15px;
+  width: 90%;
+  line-height: 23px;
+}
+.recoverpassword ul.signin_form {
+  margin: 50px 0 40px;
+}
+.recoverpassword .signin_right_inner h3 {
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+.signin_left {
+  background: url(../../assets/images/sign_in.jpg);
+  background-repeat: no-repeat;
+  width: 50%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+}
+.signup_main .signin_left {
+  background: url(../../assets/images/sign_up.jpg);
+}
+.recoverpassword .signin_left {
+  background: url(../../assets/images/recoverpassword.jpg);
+}
+.recoverpassword button.signin_btn {
+  margin-bottom: 17px;
+}
+.recoverpassword .signin_right_inner h3 span {
+  display: block;
+  color: #3e9900;
+}
+.verfiy .facebook_connection {
+  width: 100%;
+}
+.verfiy .signin_right .signin_form li {
+  border-bottom: none !important;
+  padding: 0;
+}
+.singin_content.recoverpassword.verfiy button.signin_btn {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.open .dropdown-menu {
+  display: block;
+}
+@media (max-width: 1500px) {
+  .signin_right_inner h3 {
+    font-size: 26px;
+    width: 82%;
+    margin-bottom: 18px;
+    line-height: 35px;
+  }
+  a {
+    font-weight: normal;
+    font-size: 15px;
+  }
+  h4 {
+    color: #000000;
+    font-size: 15px;
+  }
+  .recoverpassword p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

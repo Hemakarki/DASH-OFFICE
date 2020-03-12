@@ -1,0 +1,102 @@
+<div class="body_wrapper cart_page">
+    <app-header></app-header>
+    <div class="dash_account all_sec_my">
+        <div class="conta_iner">
+            <div class="dash_account_inner">
+                <div class="sub_heading">
+                    <h2>Let’s setup your dash account!</h2>
+                </div>
+                <div class="profile_img">
+                    <div class="grey_circle">
+                        <div class="green_circle"></div>
+                    </div>
+                    <div class="profile_camera">
+                        <figure><img src="../../assets/images/camera.png"></figure>
+                        <input type="file" id="file-input" class="upload_file">
+                    </div>
+
+                    <h5>Take a selfie!</h5>
+                </div>
+                <form>
+                    <div class="personal_detail">
+                        <h4>Personal details</h4>
+                        <ul>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="First name" name="name">
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Last name" name="name">
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Username" name="name">
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Email Address" name="name">
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="tel" placeholder="Enter your phone number" name="name">
+                                </mat-form-field>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="personal_detail">
+                        <h4>Address</h4>
+                        <ul>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Street Name" name="name">
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <div class="half">
+                                    <div>
+                                        <mat-form-field [floatLabel]="'never'">
+                                            <input matInput type="text" placeholder="Location" name="name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/location.png">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Pincode/Zipcode(optional)" name="name">
+                                </mat-form-field>
+                            </li>
+                            <div class="submit">
+                                <button>Submit</button>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="personal_detail">
+                        <h4>Password</h4>
+                        <ul>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input type="text" placeholder="Password">
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input type="text" placeholder="Re-Enter password" name="password">
+                                </mat-form-field>
+                            </li>
+
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

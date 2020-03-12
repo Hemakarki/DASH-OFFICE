@@ -1,0 +1,75 @@
+<div mat-dialog-content>
+  <div class="login_flow_box">
+    <div class="singin_content signup_main">
+      <div class="signin_left"></div>
+      <div class="signin_right">
+        <div mat-dialog-actions>
+          <!-----------<button mat-button (click)="onNoClick()">No Thanks</button>---->
+          <button mat-button (click)="closeModal()" cdkFocusInitial>
+            <figure><img src="../../assets/images/cross.png" /></figure>
+          </button>
+        </div>
+        <div class="signin_right_inner">
+          <h3>Let’s create your dash account!</h3>
+          <div class="input_field">
+            <form class="m-form" [formGroup]="SignUpForm" (ngSubmit)="onSubmit()" novalidate>
+              <ul class="signin_form">
+                <li>
+                  <mat-form-field class="">
+                    <input
+                      matInput
+                      type="tel"
+                      placeholder="Enter your phone number"
+                      formControlName="phone"
+                      name="phone"
+                    />
+                  </mat-form-field>
+                </li>
+                <mat-error *ngIf="f.phone.touched && f.phone.errors">
+                  <div *ngIf="f.phone.errors.required">
+                    Phone number is
+                    <strong>required</strong>
+                  </div>
+                </mat-error>
+                <li>
+                  <mat-form-field class="">
+                    <input
+                      matInput
+                      type="text"
+                      placeholder="Enter your password"
+                      formControlName="password"
+                      name="password"
+                    />
+                  </mat-form-field>
+                </li>
+                <mat-error *ngIf="f.password.touched && f.password.errors">
+                  <div *ngIf="f.password.errors.required">
+                    Password is
+                    <strong>required</strong>
+                  </div>
+                </mat-error>
+              </ul>
+
+              <button type="submit" class="signin_btn">Sign Up</button>
+            </form>
+            <div class="connect">
+              <ul>
+                <li>
+                  <div class="facebook_connection">
+                    <h4>Sign up with email address</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sign_uplink">
+              <h4>
+                Have an account?
+                <a (click)="openDialog('signIn')">Sign in </a>here
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

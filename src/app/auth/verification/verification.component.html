@@ -1,0 +1,37 @@
+<div mat-dialog-content>
+  <div class="login_flow_box">
+    <div class="singin_content recoverpassword verfiy">
+      <div class="signin_left">
+        <figure><img src="../../assets/images/recoverpassword.jpg" /></figure>
+      </div>
+      <div class="signin_right">
+        <div mat-dialog-actions>
+          <!-----------<button mat-button (click)="onNoClick()">No Thanks</button>---->
+          <button mat-button (click)="closeModal()" cdkFocusInitial>
+            <figure><img src="../../assets/images/cross.png" /></figure>
+          </button>
+        </div>
+        <div class="signin_right_inner">
+          <h3>
+            Enter the 4-digit code sent to you at<span>0767 217 315</span>
+          </h3>
+          <div class="input_field">
+            <ul class="signin_form">
+              <li>
+                <ng-otp-input
+                  (onInputChange)="($event)"
+                  [config]="{ length: 4 }"
+                >
+                </ng-otp-input>
+              </li>
+            </ul>
+            <button class="signin_btn" (click)="openDialog()">Verify</button>
+            <div class="facebook_connection">
+              <h4 (click)="continue('3')">I haven’t received a code</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

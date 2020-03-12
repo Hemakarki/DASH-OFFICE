@@ -1,0 +1,37 @@
+.green_footer_sec h2 {color:#FFFFFF;font-size:51px;width:51.8%;font-weight:bold;line-height:77px;}
+.green_footer_sec {background:#3E9900;position:relative;padding:83px 0 93px;display:flex;justify-content:space-between;align-items:center;}
+img.mobile_screen {position:absolute;top:79px;right:360px;}
+.black_footer_sec {background:#333333;position:relative;}
+.first_sec.footer img {margin-bottom:48px;}
+.footer_main {border-bottom:1px solid #707070;display:flex;padding:60px 0 70px;align-items:flex-end;}
+i {font-size:17px;background:#3E9900;color:#fff;height:48px;margin-right:8px;width:48px;border-radius:50px;display:flex;justify-content:center;align-items:center;}
+.first_sec.footer ul {display:flex;}
+.second_sec.footer::after {background:url(../../assets/images/chef.png);position:absolute;content:'';top:-270px;height:340.48px;width:100%;background-repeat:no-repeat;}
+.third_sec.footer a {color:#FFFFFF;font-size:16px;line-height:32px;}
+ .third_sec.footer {display:flex;justify-content:space-between;align-items:center;width:39%;}
+ .first_sec.footer {width:18%;}
+ .second_sec.footer {width:14%;position:relative;}
+ .copy_right ul {display:flex;justify-content:center;align-items:center;padding:39px 0 43px;}
+ .copy_right li {color:#FFFFFF;font-size:17px;margin-right:80px;}
+ .copy_right li:last-child {color:#707070;}
+ .fouth_sec.footer {display:flex;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;box-shadow:0 0px 30px #0000000f;align-items:center;background:#fff;padding:13px 16px;border-radius:10px;z-index:1;width:274px;}
+ input[type="email"] {color:#333333;font-size:16px;border:none;background:none;}
+ .third_sec_inner {display:flex;justify-content:space-between;align-items:center;width:49%;}
+ .third_sec_inner {display:flex;justify-content:space-between;align-items:flex-start;width:47%;}
+ .footer {position:relative;font-family:'Work Sans'!important;}
+ .copy_right li a {color:#fff;}
+ .copy_right li:last-child a {color:#707070;}
+ @media(max-width:1600px) {img.mobile_screen {top:55px;right:197px;}
+ .green_footer_sec h2 {font-size:50px;width:51%;line-height:77px;}
+ input[type=email] {font-size:14px;}
+ .green_footer_sec {padding:73px 0 83px;}
+ .copy_right ul {padding:61px 0 45px;}
+ }
+ @media(max-width:1500px) {img.mobile_screen {top:55px;right:87px;}
+ .green_footer_sec h2 {font-size:50px;width:49%;line-height:76px;}
+ img.mobile_screen {top:43px;}
+ .third_sec.footer{width: 48%;}
+ }
+ @media(max-width:1300px) {.green_footer_sec h2 {font-size:47px;width:46%;line-height:72px;}
+ .copy_right[_ngcontent-xhd-c4] ul[_ngcontent-xhd-c4] {padding:51px 0 35px;}
+}

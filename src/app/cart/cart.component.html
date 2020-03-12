@@ -1,0 +1,261 @@
+<app-header></app-header>
+<div class="order_detail_main cart all_sec_my">
+    <div class="conta_iner">
+        <div class="orderdetail_inner">
+            <div class="sub_main_heading">
+                <h2>Your Cart</h2>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./homepage">Home</a></li>
+                    <li class="breadcrumb-item"><a href="./orders">Restaurant</a></li>
+                    <li class="breadcrumb-item active" aria-current="orderdetail">Your Cart</li>
+                </ol>
+            </nav>
+            <div class="form_orderdetail">
+                <div class="orderdetail_form">
+                    <ul>
+                        <h3>Contact Information</h3>
+                        <div class="half">
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="First name" name="name">
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="tel" placeholder="Phone Number" name="name">
+                                </mat-form-field>
+                            </li>
+                        </div>
+                        <li>
+                            <mat-form-field [floatLabel]="'never'">
+                                <input matInput type="email" placeholder="Email Address" name="name">
+                            </mat-form-field>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h3>Billing Information</h3>
+                        <li>
+                            <div class="half">
+                                <div>
+                                    <mat-form-field [floatLabel]="'never'">
+                                        <input matInput type="text" placeholder="Enter you address" name="name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="location_icon">
+                                    <figure>
+                                        <img src="../../../assets/images/homepage/location.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="half">
+                            <li>
+                                <mat-form-field>
+                                    <mat-label>City</mat-label>
+                                    <mat-select [(value)]="selected">
+                                        <mat-option>None</mat-option>
+                                        <mat-option value="option1">Option 1</mat-option>
+                                        <mat-option value="option2">Option 2</mat-option>
+                                        <mat-option value="option3">Option 3</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <mat-form-field>
+                                    <mat-label>State</mat-label>
+                                    <mat-select [(value)]="selected">
+                                        <mat-option>None</mat-option>
+                                        <mat-option value="option1">Option 1</mat-option>
+                                        <mat-option value="option2">Option 2</mat-option>
+                                        <mat-option value="option3">Option 3</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </li>
+                        </div>
+                        <li>
+                            <mat-form-field [floatLabel]="'never'">
+                                <input matInput type="text" placeholder="Add some cooking instructions" name="name">
+                            </mat-form-field>
+                        </li>
+                    </ul>
+                    <ul class="payment_last">
+                        <h3>Payment</h3>
+                        <li>
+                            <div class="list_inner">
+                                <mat-checkbox>Wallet Linking</mat-checkbox>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_inner">
+                                <mat-checkbox>Net banking</mat-checkbox>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="list_inner">
+                                <mat-checkbox>Credit/Debit Card</mat-checkbox>
+                            </div>
+                            <div><a>Add new card</a></div>
+                        </li>
+                        <li>
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button value="1">
+                                    <div class="card_detailcs">
+                                        <h3>•••• •••• •••• 4561<span>Mastercard - 06/23</span></h3>
+                                    </div>
+                                </mat-radio-button>
+                            </mat-radio-group>
+                        </li>
+                        <li>
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button value="1">
+                                    <div class="card_detailcs">
+                                        <h3>•••• •••• •••• 4561<span>Visacard - 06/23</span></h3>
+                                    </div>
+                                </mat-radio-button>
+                            </mat-radio-group>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order_summary_main">
+                    <div class="order_summary">
+                        <h3>Order Summary</h3>
+                        <div class="ordersummary_inner">
+                            <ul>
+                                <li>
+                                    <div class="inner_summary">
+                                        <div class="text_detaill">
+                                            <h5>Quattro Formaggi</h5>
+                                            <p><span>KES 8.50</span>Tomato sauce, mozzarella, romano, olive oil and
+                                                basil
+                                                sauce,
+                                                mozzarella, romano, … read more</p>
+                                        </div>
+                                        <div class="orderadd_cart_box">
+                                            <a>-</a>
+                                            <p>0</p>
+                                            <a>+</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner_summary">
+                                        <div class="text_detaill">
+                                            <h5>Quattro Formaggi</h5>
+                                            <p><span>KES 8.50</span>Tomato sauce, mozzarella, romano, olive oil and
+                                                basil
+                                                sauce,
+                                                mozzarella, romano, … read more</p>
+                                        </div>
+                                        <div class="orderadd_cart_box">
+                                            <a>-</a>
+                                            <p>0</p>
+                                            <a>+</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner_summary">
+                                        <div class="text_detaill">
+                                            <h5>Quattro Formaggi</h5>
+                                            <p><span>KES 8.50</span>Tomato sauce, mozzarella, romano, olive oil and
+                                                basil
+                                                sauce,
+                                                mozzarella, romano, … read more</p>
+                                        </div>
+                                        <div class="orderadd_cart_box">
+                                            <a>-</a>
+                                            <p>0</p>
+                                            <a>+</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner_summary">
+                                        <div class="text_detaill">
+                                            <h5>Quattro Formaggi</h5>
+                                            <p><span>KES 8.50</span>Tomato sauce, mozzarella, romano, olive oil and
+                                                basil
+                                                sauce,
+                                                mozzarella, romano, … read more</p>
+                                        </div>
+                                        <div class="orderadd_cart_box">
+                                            <a>-</a>
+                                            <p>0</p>
+                                            <a>+</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner_summary">
+                                        <div class="text_detaill">
+                                            <h5>Quattro Formaggi</h5>
+                                            <p><span>KES 8.50</span>Tomato sauce, mozzarella, romano, olive oil and
+                                                basil
+                                                sauce,
+                                                mozzarella, romano, … read more</p>
+                                        </div>
+                                        <div class="orderadd_cart_box">
+                                            <a>-</a>
+                                            <p>0</p>
+                                            <a>+</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="summary_result">
+                            <div class="promo_code">
+                                <div class="promo_code_inner">
+                                    <mat-form-field [floatLabel]="'never'">
+                                        <input matInput type="text" placeholder="Enter your promo code here"
+                                            name="name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="promo_code_inners">
+                                    <button> Apply</button>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="result_detail">
+                                        <div class="result_detail_left">
+                                            <h5>Total</h5>
+                                        </div>
+                                        <div class="result_detail_right">
+                                            <h5>KES 29.05</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="result_detail">
+                                        <div class="result_detail_left">
+                                            <h5>Delivery</h5>
+                                        </div>
+                                        <div class="result_detail_right">
+                                            <h5>KES 29.05</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="result_detail">
+                                        <div class="result_detail_left">
+                                            <h5>Total</h5>
+                                        </div>
+                                        <div class="result_detail_right">
+                                            <h5>KES 29.05</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <button class="placeorder" (click)="goTocongrulation()">Place order - KES 29.05</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

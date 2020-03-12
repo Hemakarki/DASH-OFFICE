@@ -1,0 +1,70 @@
+<div mat-dialog-content>
+    <div class="login_flow_box">
+        <div class="singin_content">
+            <div class="signin_left">
+
+            </div>
+            <div class="signin_right">
+                <div mat-dialog-actions>
+                    <button mat-button (click)="closeModal()" cdkFocusInitial>
+                        <figure><img src="../../assets/images/cross.png"></figure>
+                    </button>
+                </div>
+                <div class="signin_right_inner">
+                    <h3>Welcome back! You’ve been missed</h3>
+                    <div class="input_field">
+                        <ul class="signin_form">
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Email Address" name="name">
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Enter your password" name="name">
+                                </mat-form-field>
+                            </li>
+
+                        </ul>
+                        <div class="forget_pswd">
+                            <a (click)="openDialog('forgot')">Forgot Password?</a>
+                        </div>
+                        <button class="signin_btn">Sign in</button>
+                        <div class="connect">
+                            <h4>or connect with</h4>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <div class="facebook_connection">
+                                            <div class="facebook_img">
+                                                <figure><img src="../../assets/images/facebook.png"></figure>
+                                            </div>
+                                            <div class="facebook_img">
+                                                <h4>Facebook</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="facebook_connection">
+                                            <div class="facebook_img">
+                                                <figure><img src="../../assets/images/google.png"></figure>
+                                            </div>
+                                            <div class="facebook_img">
+                                                <h4>Google</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sign_uplink">
+                            <h4>Don’t have an account? <a (click)="openDialog('signUp')">Signup </a>here</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
